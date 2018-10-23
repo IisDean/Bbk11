@@ -1,0 +1,36 @@
+/**
+ * Created by IisDean on 2018/10/23.
+ */
+.user-container {
+    top: 40%;
+    width: 100%;
+}
+.user-head {
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.4);
+}
+.user-msg-text {
+    margin: .4rem auto 0;
+    font-weight: bold;
+    color: #28166f;
+}
+.btn-container {
+    bottom: 10%;
+}
+.helpme-btn {
+    margin: 1rem auto 0;
+    width: 50%;
+}
+.fish-wrap {
+    top: 22%;
+    right: -10%;
+    width: 88%;
+    pointer-events: none;
+}
+.inset-wrap {
+    margin: 1rem auto 0;
+    width: 50%;
+}

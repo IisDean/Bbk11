@@ -1,0 +1,64 @@
+/**
+ * Created by IisDean on 2018/10/23.
+ */
+.page-container {
+    position: relative;
+}
+.page-content {
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.fish-wrap {
+    top: -10%;
+    right: -15%;
+    width: 88%;
+}
+.content-container {
+    top: 36%;
+    width: 100%;
+    height: 60%;
+}
+.content-blue-text {
+    margin: 0;
+    font-weight: bold;
+    color: #28166f;
+}
+.red-text {
+    color: #c33b28;
+}
+.index-btn {
+    margin: 1rem auto 0;
+    width: 50%;
+}
+/* 给力小伙伴 */
+.friends-container {
+    margin: 1.5rem auto 0;
+}
+.dot-icon {
+    margin: 0 .4rem;
+    display: block;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.friends-title-text {
+    margin: 0 .4rem;
+    font-weight: bold;
+    color: #fff;
+}
+/* 礼盒 */
+.gift-box-container {
+    margin: 1rem auto 0;
+    width: 65%;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.gift-box-wrap {
+    position: relative;
+    margin-bottom: .2rem;
+    padding-right: 3%;
+    width: 10%;
+}

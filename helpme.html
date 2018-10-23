@@ -1,0 +1,130 @@
+<!-- Created by IisDean on 2018/10/23. -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta id="wxKeywords" name="Keywords" content="<keywords />">
+    <meta id="wxDescription" name="Description" content="<description />"/>
+    <meta name="apple-touch-fullscreen" content="YES"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="pragram" content="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!--ACTUI CSS 开始-->
+    <link rel="stylesheet" href="Css/actui.css">
+    <link rel="stylesheet" href="Css/actui_animate.css">
+    <!--ACTUI CSS 结束-->
+    <!--页面css样式开始-->
+    <link rel="stylesheet" type="text/css" href="Css/common.css">
+    <link rel="stylesheet" type="text/css" href="Css/helpme.css">
+    <!--页面css样式结束-->
+</head>
+<body>
+<div class="ui-content ui-bg-full" style="background-image: url('Images/helpme_bg.jpg')">
+
+    <!-- 活动规则 -->
+    <div class="ui-abs ui-full-img rule-btn ani-touch-scale J-rule-btn">
+        <img src="Images/rule_btn.png" alt="活动规则">
+    </div>
+
+    <!-- 大鱼 -->
+    <div class="ui-abs ui-full-img fish-wrap">
+        <img src="Images/inset_yu.png" alt="大鱼">
+    </div>
+
+    <!-- 头像 -->
+    <div class="ui-abs-center user-container">
+        <div class="ui-avatar-head ui-avatar-radius user-head">
+            <div style="background-image: url();"></div>
+        </div>
+        <p class="ui-text-center user-msg-text">xxx为你助力</p>
+    </div>
+
+    <!-- 按钮 -->
+    <div class="ui-abs-center btn-container">
+        <!-- 我来帮助 -->
+        <div class="ui-full-img ani-touch-scale helpme-btn J-helpme-btn">
+            <img src="Images/help_btn.png" alt="我来帮助">
+        </div>
+        <!-- 我要参与 -->
+        <a href="#" class="ui-full-img ani-touch-scale helpme-btn">
+            <img src="Images/canyu_btn.png" alt="我要参与">
+        </a>
+    </div>
+
+</div>
+
+<!-- popup, panel 等放在这里 -->
+<div class="panel-overlay">
+
+    <!-- 活动规则 -->
+    <div class="act-pop J-rule-pop" style="display: none;">
+        <div class="act-pop-mask J-close-btn"></div>
+        <div class="act-pop-box">
+            <div class="act-pop-middle scale-pop">
+                <div class="act-pop-top ui-full-img">
+                    <img src="Images/pop_top_rule.png" alt="活动规则顶部">
+                    <!-- 关闭按钮 -->
+                    <div class="ui-abs ui-full-img ani-touch-scale close-btn J-close-btn">
+                        <img src="Images/close_btn.png" alt="关闭按钮">
+                    </div>
+                </div>
+                <div class="act-pop-content" style="background-image: url(Images/pop_middle_rule.png);">
+                    <p class="rule-msg-text">1.<span class="red-text">关注“步步高超市”</span>官方微信，参与游戏互动或直接扫描活动二维码。</p>
+                    <p class="rule-msg-text">2.参与者<span class="red-text">转发</span>“步步高超市锦鲤王”至朋友圈，<span class="red-text">邀请111位朋友助力</span>。每多一个朋友助力，即点亮一个礼盒。</p>
+                    <p class="rule-msg-text">3.达到111个朋友助力，界面飘落礼盒，抽奖按钮点亮，显示“11月11日11:00点击抽奖”。</p>
+                    <p class="rule-msg-text">4.<span class="red-text">11月11日</span>上午11:05分左右出奖，点击活动页面，即可查看中奖结果。</p>
+                </div>
+                <div class="act-pop-bottom ui-full-img">
+                    <img src="Images/pop_bottom_rule.png" alt="活动规则底部">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 抽奖 -->
+    <div class="act-pop J-lottery-pop" style="display: none;">
+        <div class="act-pop-mask J-close-btn"></div>
+        <div class="act-pop-box">
+            <div class="act-pop-middle scale-pop">
+                <div class="act-pop-top ui-full-img">
+                    <img src="Images/pop_top_rule.png" alt="活动规则顶部">
+                    <!-- 关闭按钮 -->
+                    <div class="ui-abs ui-full-img ani-touch-scale close-btn J-close-btn">
+                        <img src="Images/close_btn.png" alt="关闭按钮">
+                    </div>
+                </div>
+                <div class="act-pop-content" style="background-image: url(Images/pop_middle_rule.png);">
+                    <p class="ui-font-xl ui-text-center white-title-text">填写姓名</p>
+                    <div class="input-wrap">
+                        <input type="text" class="ui-text-center" placeholder="请填写姓名" id="userName" />
+                    </div>
+                    <p class="ui-font-xl ui-text-center white-title-text">请填写手机号码</p>
+                    <div class="input-wrap">
+                        <input type="tel" maxlength="11" class="ui-text-center" placeholder="请填写手机号码" id="userMobile" />
+                    </div>
+                    <button class="ui-button ui-button-fill lotter-submit J-lotter-submit">提交</button>
+                </div>
+                <div class="act-pop-bottom ui-full-img">
+                    <img src="Images/pop_bottom_rule.png" alt="活动规则底部">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 召唤好友 -->
+    <div class="act-pop J-share-pop" style="display: none;">
+        <div class="act-pop-mask J-close-btn"></div>
+        <div class="act-pop-friend act-pop-share scale-pop ui-full-img J-close-btn" style="right: 5%;width: 90%;">
+            <img src="Images/share_pop.png" alt="召唤好友">
+        </div>
+    </div>
+
+</div>
+<script src="Js/jquery.min.js"></script>
+<script src="Js/common.js"></script>
+</body>
+</html>
