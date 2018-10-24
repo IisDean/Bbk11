@@ -3,6 +3,7 @@
  */
 .page-container {
     position: relative;
+    overflow: hidden;
 }
 .page-content {
     top: 0%;
@@ -61,4 +62,10 @@
     margin-bottom: .2rem;
     padding-right: 3%;
     width: 10%;
+}
+.gift-box {
+    top: -5%;
+    margin-left: -.5rem;
+    width: 1rem;
+    pointer-events: none;
 }
